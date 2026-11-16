@@ -4,7 +4,7 @@ package model;
 import java.time.LocalDate;
 
 public class CaixaMedicamento {
-    
+
     //Identificação de atributos da classe CaixaMedicamento
     //oq e importante conter na caixa
     private String id;
@@ -12,7 +12,7 @@ public class CaixaMedicamento {
     private String lote;
     private LocalDate dataValidade;
     private int quantidade;
-    
+
     //Construtor das caixas de medicamentos
     public CaixaMedicamento(String id, String nomeMedicamento, String lote, LocalDate dataValidade, int quantidade){
         this.id = id;
@@ -21,23 +21,23 @@ public class CaixaMedicamento {
         this.dataValidade = dataValidade;
         this.quantidade = quantidade;
     }
-    
+
     public String getId(){
         return id;
     }
-    
+
     public String getNomeMedicamento(){
         return nomeMedicamento;
     }
-    
+
     public String getLote(){
         return lote;
     }
-    
+
     public LocalDate getDataValidade(){
         return dataValidade;
     }
-    
+
     public int getQuantidade(){
         return quantidade;
     }
@@ -46,8 +46,8 @@ public class CaixaMedicamento {
     public String toString() {
        return "[" + nomeMedicamento + " | Lote: " + lote + " | Val: " + dataValidade + " | Qtd: " + quantidade + "]";
     }
-    
 
 
-    
+
+
 }
